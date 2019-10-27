@@ -5,6 +5,7 @@ It's a multilingual web application about displaying the features of messaging a
 - Html5.
 - Css.
 - Bootstrap Framework.
+- Sass.
 - Pure Javascript, no frameworks or libraries.
 - FontAwesome.
 
