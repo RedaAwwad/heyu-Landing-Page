@@ -1,0 +1,305 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+}
+body p {
+  color: #908c8c;
+}
+
+.header {
+  background: url("/images/header-background.png") center;
+  background-size: cover;
+}
+
+.navbar .navbar-brand {
+  position: relative;
+  border: 1px solid #fff;
+  padding: 5px;
+  background-color: #fff;
+  color: #e22438;
+  border-radius: 10px;
+}
+.navbar .navbar-brand::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 10px;
+  width: 15px;
+  height: 15px;
+  transform: rotate(-45deg);
+  background-color: #fff;
+  z-index: 1;
+}
+.navbar .navbar-brand:hover {
+  color: #e22438 !important;
+}
+.navbar .nav-item.active,
+.navbar .active-language {
+  text-decoration: line-through;
+  color: #fff !important;
+}
+
+.main .main-body .main-content {
+  padding-top: 5vh;
+}
+@media (min-width: 768px) {
+  .main .main-body .main-content {
+    padding-top: 15vh;
+  }
+}
+.main .main-body .main-content .download {
+  color: #e22438 !important;
+  border-radius: 50px;
+}
+.main .main-image {
+  padding-left: 40px;
+}
+
+.features .features-images {
+  position: relative;
+  min-height: 380px;
+}
+.features .features-images .features-image1,
+.features .features-images .features-image2 {
+  position: absolute;
+}
+.features .features-images .features-image1 {
+  top: 0;
+  left: 0;
+}
+@media (min-width: 768px) {
+  .features .features-images .features-image1 {
+    left: 40px;
+  }
+}
+.features .features-images .features-image2 {
+  top: 50px;
+  left: 25px;
+}
+@media (min-width: 768px) {
+  .features .features-images .features-image2 {
+    left: 100px;
+    animation: wave 7s linear infinite;
+  }
+}
+@keyframes wave {
+  0%, 55% {
+    top: 25px;
+    left: 30px;
+  }
+  5%, 15%, 35%, 25% {
+    top: 15px;
+    left: 50px;
+  }
+  10%, 45% {
+    top: 20;
+    left: 10px;
+  }
+  65%, 75%, 100% {
+    top: 35px;
+    left: 40px;
+  }
+  85%, 95% {
+    top: 40px;
+    left: 70px;
+  }
+}
+
+.features-content {
+  margin-top: 20%;
+}
+.features-content .dott {
+  color: #e22438;
+}
+
+.keep-in-touch {
+  margin-bottom: 110px;
+}
+.keep-in-touch .keep-in-touch-images {
+  position: relative;
+  min-height: 350px;
+}
+.keep-in-touch .keep-in-touch-images .keep-in-touch-image1,
+.keep-in-touch .keep-in-touch-images .keep-in-touch-image2 {
+  position: absolute;
+}
+.keep-in-touch .keep-in-touch-images .keep-in-touch-image1 {
+  top: 0;
+  right: 80px;
+}
+.keep-in-touch .keep-in-touch-images .keep-in-touch-image2 {
+  top: 40px;
+  right: 10px;
+}
+@media (min-width: 768px) {
+  .keep-in-touch .keep-in-touch-images .keep-in-touch-image2 {
+    right: 170px;
+    animation: wave 7s linear infinite;
+    animation-delay: 1.5s;
+  }
+}
+.keep-in-touch .keep-in-touch-content {
+  margin-top: 20%;
+}
+.keep-in-touch .keep-in-touch-content .dott {
+  color: #e22438;
+}
+
+.testimonials {
+  margin-bottom: 120px;
+}
+.testimonials .dott {
+  color: #e22438;
+}
+.testimonials .comment {
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  position: relative;
+  transition: all 0.8s ease-in-out;
+}
+.testimonials .comment::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 20px;
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+.testimonials .comment .company {
+  color: #e22438;
+}
+.testimonials .show-testimonials {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+.testimonials .person .card {
+  border: none;
+}
+
+.app-info {
+  height: 300px;
+  margin-bottom: 110px;
+  background: url("/images/app-info-background.png") center;
+  background-size: cover;
+}
+@media (max-width: 991px) {
+  .app-info {
+    height: 660px;
+  }
+}
+@media (max-width: 768px) {
+  .app-info {
+    height: 1000px;
+  }
+}
+@media (max-width: 500px) {
+  .app-info {
+    height: 1200px;
+  }
+}
+.app-info .mobile-image {
+  position: relative;
+  height: 250px;
+}
+@media (max-width: 768px) {
+  .app-info .mobile-image {
+    height: 420px;
+  }
+}
+.app-info .mobile-image img {
+  position: absolute;
+  top: -145px;
+  left: 50px;
+}
+@media (max-width: 767px) {
+  .app-info .mobile-image img {
+    top: 0;
+  }
+}
+
+.newsletter {
+  margin-top: 150px;
+  margin-bottom: 110px;
+}
+.newsletter .dott {
+  color: #e22438;
+}
+.newsletter .form-control {
+  background-color: #ddd !important;
+  border-radius: 50px;
+  border: none;
+}
+.newsletter .form-control:focus {
+  box-shadow: none;
+  border: none;
+}
+.newsletter .subscribe-btn {
+  border-radius: 50px;
+  opacity: 0.95;
+  transition: opacity 0.3s ease-in-out;
+  background: gradient(linear, to bottom, #e73431, #e8323a, #e83142, #e83149, #e73151);
+  background: -webkit-linear-gradient(#e73431, #e8323a, #e83142, #e83149, #e73151);
+  background: -moz-linear-gradient(#e73431, #e8323a, #e83142, #e83149, #e73151);
+  background: -o-linear-gradient(#e73431, #e8323a, #e83142, #e83149, #e73151);
+  background: -ms-linear-gradient(#e73431, #e8323a, #e83142, #e83149, #e73151);
+  background: linear-gradient(e73431, #e8323a, #e83142, #e83149, #e73151);
+}
+.newsletter .subscribe-btn:hover {
+  opacity: 1;
+}
+
+.download {
+  margin-top: 110px;
+  margin-bottom: 110px;
+}
+.download .dott {
+  color: #e22438;
+}
+.download .app-icon {
+  border-radius: 20px;
+}
+
+.footer a {
+  color: #333;
+}
+.footer a:hover {
+  color: #e22438;
+}
+.footer .language {
+  background-color: #ddd;
+  border-radius: 50px;
+  color: #e22438;
+}
+
+.to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  width: 40px;
+  height: 40px;
+  background: gradient(linear, to bottom, #e73431, #e8323a, #e83142, #e83149, #e73151);
+  background: -webkit-linear-gradient(#e73431, #e8323a, #e83142, #e83149, #e73151);
+  background: -moz-linear-gradient(#e73431, #e8323a, #e83142, #e83149, #e73151);
+  background: -o-linear-gradient(#e73431, #e8323a, #e83142, #e83149, #e73151);
+  background: -ms-linear-gradient(#e73431, #e8323a, #e83142, #e83149, #e73151);
+  background: linear-gradient(e73431, #e8323a, #e83142, #e83149, #e73151);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  visibility: hidden;
+}
+.to-top i {
+  transition: all 0.3s ease-in-out;
+}
+.to-top:hover i {
+  transform: scale(1.5);
+}
+
+/*# sourceMappingURL=main.css.map */

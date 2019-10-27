@@ -1,0 +1,13 @@
+//Gradient Mixin to Generate Prefixes
+@mixin backgroundgradient() {
+  background: gradient(linear, to bottom, #e73431, #e8323a, #e83142, #e83149, #e73151);
+  background: -webkit-linear-gradient( #e73431, #e8323a, #e83142, #e83149, #e73151);
+  background: -moz-linear-gradient(#e73431, #e8323a, #e83142, #e83149, #e73151);
+  background: -o-linear-gradient(#e73431, #e8323a, #e83142, #e83149, #e73151);
+  background: -ms-linear-gradient( #e73431, #e8323a, #e83142, #e83149, #e73151);
+  background: linear-gradient(e73431, #e8323a, #e83142, #e83149, #e73151);
+}
+
+
+
+

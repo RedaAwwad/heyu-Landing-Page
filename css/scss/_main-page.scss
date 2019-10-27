@@ -1,0 +1,297 @@
+@import "components", "mixins";
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+  p {
+    color: #908c8c;
+  }
+}
+// Header
+.header {
+  background: url("/images/header-background.png") center;
+  background-size: cover;
+}
+
+.navbar {
+  .navbar-brand {
+    position: relative;
+    border: 1px solid #fff;
+    padding: 5px;
+    background-color: #fff;
+    color: $mainColor;
+    border-radius: 10px;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      left: 10px;
+      width: 15px;
+      height: 15px;
+      transform: rotate(-45deg);
+      background-color: #fff;
+      z-index: 1;
+    }
+    &:hover {
+      color: $mainColor !important;
+    }
+  }
+  .nav-item.active,
+  .active-language {
+    text-decoration: line-through;
+    color: #fff !important;
+  }
+}
+
+.main {
+  .main-body {
+    .main-content {
+      @media (min-width: 768px) {
+        padding-top: 15vh;
+      }
+      padding-top: 5vh;
+      .download {
+        color: $mainColor !important;
+        border-radius: 50px;
+      }
+    }
+  }
+  .main-image {
+      padding-left: 40px;
+  }
+}
+
+// Features
+.features {
+  .features-images {
+    position: relative;
+    min-height: 380px;
+    .features-image1,
+    .features-image2 {
+      position: absolute;
+    }
+    .features-image1 {
+      @media (min-width: 768px) {
+        left: 40px;
+      }
+      top: 0;
+      left: 0;
+    }
+    .features-image2 {
+      @media (min-width: 768px) {
+        left: 100px;
+        animation: wave 7s linear infinite;
+      }
+      top: 50px;
+      left: 25px;
+      @keyframes wave {
+          0%, 55% {
+            top: 25px;
+            left: 30px;
+          }
+          5%, 15%, 35%, 25% {
+            top: 15px;
+            left: 50px;
+          }
+          10%, 45% {
+            top: 20;
+            left: 10px;
+          }
+          65%, 75%, 100% {
+            top: 35px;
+            left: 40px;
+          }
+          85%, 95% {
+            top: 40px;
+            left: 70px;
+          }
+        }
+      }
+    }
+  }
+  .features-content {
+    margin-top: 20%;
+    .dott {
+      color: $mainColor;
+    }
+  }
+
+// Start Keep In Touch Section 
+.keep-in-touch {
+  margin-bottom: 110px;
+  .keep-in-touch-images {
+    position: relative;
+    min-height: 350px;
+    .keep-in-touch-image1,
+    .keep-in-touch-image2 {
+      position: absolute;
+    }
+    .keep-in-touch-image1 {
+      top: 0;
+      right: 80px;
+    }
+    .keep-in-touch-image2 {
+      @media (min-width: 768px) {
+        right: 170px;
+        animation: wave 7s linear infinite;
+        animation-delay: 1.5s;
+      }
+      top: 40px;
+      right: 10px;
+    }
+  }
+  .keep-in-touch-content {
+    margin-top: 20%;
+    .dott {
+      color: $mainColor;
+    }
+  }
+}
+
+// Testimonials Section 
+.testimonials {
+  margin-bottom: 120px;
+  .dott {
+    color: $mainColor;
+  }
+  .comment {
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    position: relative;
+    transition: all 0.8s ease-in-out;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      left: 20px;
+      width: 20px;
+      height: 20px;
+      transform: rotate(45deg);
+      background-color: #fff;
+      border-bottom: 1px solid #ddd;
+      border-right: 1px solid #ddd;
+    }
+
+    .company {
+      color: $mainColor;
+    }
+  }
+
+  .show-testimonials {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+  }
+  
+  .person {
+    .card {
+      border: none;
+    }
+  }
+}
+
+//Application Info
+.app-info {
+  height: 300px;
+  margin-bottom: 110px;
+  background: url("/images/app-info-background.png") center;
+  background-size: cover;
+  @media (max-width: 991px) {
+    height: 660px;
+  }
+  @media (max-width: 768px) {
+    height: 1000px;
+  }
+  @media (max-width: 500px) {
+    height: 1200px;
+  }
+  .mobile-image {
+    position: relative;
+    height: 250px;
+    @media (max-width: 768px) {
+      height: 420px;
+    }
+    img {
+      @media (max-width: 767px) {
+        top: 0;
+      }
+      position: absolute;
+      top: -145px;
+      left: 50px;
+      
+    }
+  }
+}
+
+//Newsletter
+.newsletter {
+  margin-top: 150px;
+  margin-bottom: 110px;
+  .dott {
+    color: $mainColor;
+  }
+  .form-control {
+    background-color: #ddd !important;
+    border-radius: 50px;
+    border: none;
+    &:focus {
+      box-shadow: none;
+      border: none;
+    }
+  }
+  .subscribe-btn {
+    border-radius: 50px;
+    opacity: 0.95;
+    transition: opacity 0.3s ease-in-out;
+    @include backgroundgradient();
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+//Download Section
+.download {
+  margin-top: 110px;
+  margin-bottom: 110px;
+  .dott {
+    color: $mainColor;
+  }
+  .app-icon {
+    border-radius: 20px;
+  }
+}
+
+//Footer
+.footer {
+  a {
+    color: #333;
+    &:hover {
+      color: $mainColor;
+    }
+  }
+  .language {
+    background-color: #ddd;
+    border-radius: 50px;
+    color: $mainColor;
+  }
+}
+
+//To Top Button
+.to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  width: 40px;
+  height: 40px;
+  @include backgroundgradient();
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  visibility: hidden;
+  i {transition: all 0.3s ease-in-out;}
+  &:hover i {
+    transform: scale(1.5);
+  }
+}
