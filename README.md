@@ -1,5 +1,7 @@
 # heyu_app
-A multilingual web application displaying all features of chatting mobile app.
+An awesome landing page to display the features of a mobile application.
+
+[Demo](https://heyu.netlify.com/)
 
 **Languages and Tools:**
 - Html.
@@ -7,4 +9,3 @@ A multilingual web application displaying all features of chatting mobile app.
 - Bootstrap Framework.
 - FontAwesome.
 
-**To Preview Go To** [HeyU](https://heyu.netlify.com/).
